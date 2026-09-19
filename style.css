@@ -1,0 +1,391 @@
+/* ============================================================
+   OKULLARIN BİTMESİNE KAÇ GÜN KALDI?
+   ============================================================ */
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc,
+            #eef2ff
+        );
+
+    color: #172033;
+
+}
+
+
+.container {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 24px;
+
+}
+
+
+.card {
+
+    width: 100%;
+
+    max-width: 620px;
+
+    background: white;
+
+    border-radius: 28px;
+
+    padding: 48px 40px 36px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.emoji {
+
+    font-size: 42px;
+
+    margin-bottom: 12px;
+
+}
+
+
+h1 {
+
+    margin: 0;
+
+    font-size: 38px;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+
+}
+
+
+.countdown {
+
+    margin-top: 34px;
+
+}
+
+
+.number {
+
+    font-size: 112px;
+
+    line-height: 0.95;
+
+    font-weight: 800;
+
+    letter-spacing: -6px;
+
+}
+
+
+.label {
+
+    margin-top: 8px;
+
+    font-size: 24px;
+
+    font-weight: 600;
+
+}
+
+
+.school-end {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    margin-top: 24px;
+
+    font-size: 15px;
+
+    color: #667085;
+
+}
+
+
+.school-end strong {
+
+    font-size: 18px;
+
+    color: #172033;
+
+}
+
+
+.progress-section {
+
+    margin-top: 36px;
+
+    text-align: left;
+
+}
+
+
+.progress-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #667085;
+
+}
+
+
+.progress-bar {
+
+    height: 12px;
+
+    background: #e9edf5;
+
+    border-radius: 999px;
+
+    overflow: hidden;
+
+}
+
+
+.progress-fill {
+
+    height: 100%;
+
+    width: 0%;
+
+    border-radius: 999px;
+
+    background: #4f46e5;
+
+    transition: width 0.6s ease;
+
+}
+
+
+.stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-top: 30px;
+
+}
+
+
+.stat {
+
+    padding: 18px 10px;
+
+    border-radius: 18px;
+
+    background: #f7f8fc;
+
+}
+
+
+.stat-icon {
+
+    font-size: 24px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.stat-number {
+
+    font-size: 25px;
+
+    font-weight: 750;
+
+}
+
+
+.stat-label {
+
+    margin-top: 3px;
+
+    font-size: 12px;
+
+    line-height: 1.3;
+
+    color: #667085;
+
+}
+
+
+.share-button {
+
+    margin-top: 30px;
+
+    width: 100%;
+
+    border: none;
+
+    border-radius: 14px;
+
+    padding: 15px 20px;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    background: #172033;
+
+    color: white;
+
+    transition:
+        transform 0.15s ease,
+        opacity 0.15s ease;
+
+}
+
+
+.share-button:hover {
+
+    transform: translateY(-1px);
+
+    opacity: 0.92;
+
+}
+
+
+.footer-note {
+
+    margin-top: 20px;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    color: #98a2b3;
+
+}
+
+
+footer {
+
+    margin-top: 18px;
+
+    font-size: 12px;
+
+    color: #98a2b3;
+
+}
+
+
+/* ------------------------------------------------------------
+   MOBILE
+   ------------------------------------------------------------ */
+
+@media (max-width: 600px) {
+
+    .container {
+
+        padding: 14px;
+
+    }
+
+
+    .card {
+
+        padding: 34px 22px 28px;
+
+        border-radius: 22px;
+
+    }
+
+
+    h1 {
+
+        font-size: 29px;
+
+    }
+
+
+    .number {
+
+        font-size: 82px;
+
+        letter-spacing: -4px;
+
+    }
+
+
+    .label {
+
+        font-size: 20px;
+
+    }
+
+
+    .stats {
+
+        gap: 8px;
+
+    }
+
+
+    .stat {
+
+        padding: 14px 6px;
+
+    }
+
+
+    .stat-number {
+
+        font-size: 21px;
+
+    }
+
+}
