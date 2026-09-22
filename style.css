@@ -408,3 +408,10 @@ footer {
     color: #6b7280;
     margin: 0;
 }
+
+.intro-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6b7280;
+    margin: 10px 0 20px;
+}
